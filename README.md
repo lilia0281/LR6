@@ -3,39 +3,80 @@
 Изучение базовых возможностей системы управления версиями, опыт работы с Git Api, опыт работы с локальным и удаленным репозиторием. 
 ## Ход работы
 ### 1. Создание аккаунта на сайте GitHub
-![изображение](https://github.com/Natasikk/LR6/blob/Report/Images/гит1.jpg)
+![изображение](https://github.com/Natasikk/LR6/blob/Report/images/гит1.png)
 
 ### 2. Создание копии репозитория
-![изображение](https://github.com/Natasikk/LR6/blob/Report/Images/гит2.jpg)
+![изображение](https://github.com/Natasikk/LR6/blob/Report/images/гит2.png)
 
 ### 4. Настройка клиента Git
-![изображение](https://github.com/Natasikk/LR6/blob/Report/Images/гит3.jpg)
+```sh
+git config --global user.email "liliadebil.2014@gmail.com"
+git config --global user.name "Группа 4217 Мирошниченко Л.А."
+
+```
+![изображение](https://github.com/Natasikk/LR6/blob/Report/images/гит3.png)
 
 ### 5. Клонирование личного удалённого репозитория на компьютер
-![изображение](https://github.com/Natasikk/LR6/blob/Report/Images/гит4.jpg)
+```sh
+ git clone + [ссылка на репозиторий].
+
+```
+![изображение](https://github.com/Natasikk/LR6/blob/Report/images/гит4.png)
 
 ### 6. Добавление файла в удаленный репозиторий, подтягивание изменений
-![изображение](https://github.com/Natasikk/LR6/blob/Report/Images/гит4.jpg)
-![изображение](https://github.com/Natasikk/LR6/blob/Report/Images/гит5.jpg)
+Добавила файл `New_file.txt` через интерфейс GitHub. Подтянула изменения в локальный репозиторий \
+![изображение](https://github.com/Natasikk/LR6/blob/Report/images/гит4.png)
+![изображение](https://github.com/Natasikk/LR6/blob/Report/images/гит5.png)
 
 ### 7. История операций для ветки master
-![изображение](https://github.com/Natasikk/LR6/blob/Report/Images/гит6.jpg)
+```sh
+git pull origin master
+```
+![изображение](https://github.com/Natasikk/LR6/blob/Report/images/гит6.png)
 
 ### 8. Слияние в ветку master и удаление побочной ветки
-![изображение](https://github.com/Natasikk/LR6/blob/Report/Images/гит7.jpg)
+```sh
+git checout master
+git merge new-branch
+git branch -d new-branch
+```
+![изображение](https://github.com/Natasikk/LR6/blob/Report/images/гит7.png)
+
+### 9. Несколько изменений
+```sh
+git add New_file
+git commit -m "Изменения1"
+```
+![изображение](https://github.com/Natasikk/LR6/blob/Report/images/гит20.png)
+![изображение](https://github.com/Natasikk/LR6/blob/Report/Images/гит21.png)
 
 ### 10. Откат последнего коммита
-![изображение](https://github.com/Natasikk/LR6/blob/Report/Images/гит8.jpg)
+```sh
+git revert HEAD
+```
+![изображение](https://github.com/Natasikk/LR6/blob/Report/images/гит8.png)
 
 ### 11. Создание ветки для отчёта
-![изображение](https://github.com/Natasikk/LR6/blob/Report/Images/гит11.jpg)
+```sh
+git branch new_branch
+```
+![изображение](https://github.com/Natasikk/LR6/blob/Report/images/гит11.png)
 
 ### 12. История операций
-![изображение](https://github.com/Natasikk/LR6/blob/Report/Images/гит12.jpg)
-![изображение](https://github.com/Natasikk/LR6/blob/Report/Images/гит13.jpg)
+```sh
+git log
+git log --pretty=format:"%h + %an + %an + %s".
+
+```
+![изображение](https://github.com/Natasikk/LR6/blob/Report/images/гит10.png)
+![изображение](https://github.com/Natasikk/LR6/blob/Report/images/гит12.png)
+![изображение](https://github.com/Natasikk/LR6/blob/Report/images/гит13.png)
 
 ### 13. Загрузка изменений в удалённый репозиторий
-![изображение](https://github.com/Natasikk/LR6/blob/Report/Images/гит14.jpg)
+```sh
+git push origin new_branch
+```
+![изображение](https://github.com/Natasikk/LR6/blob/Report/images/гит14.png)
 
 ## Вывод
 В ходе данной лабораторной работы были изучены базовые возможности системы управления версиями и был получен опыт работы с Git Api, локальным и удаленным репозиторием.
